@@ -11,9 +11,9 @@ namespace CMP1903_A1_2324
     internal class Game
     {
         private Random random = new Random();
-        private Die Dice_1;
-        private Die Dice_2;
-        private Die Dice_3;
+        public Die Dice_1;
+        public Die Dice_2;
+        public Die Dice_3;
 
         public Game()
         {
@@ -22,10 +22,12 @@ namespace CMP1903_A1_2324
             Dice_3 = new Die(random);
         }
 
-        public void Play()
+        public int Play()
         {
             int result = Dice_1.Roll() + Dice_2.Roll() + Dice_3.Roll();
-            Console.WriteLine("Result of rolling three dice: " + result);
+            return result;
+            
         }
+        
     }
 }

@@ -11,7 +11,7 @@ namespace CMP1903_A1_2324
     {
         private Random random;
 
-        public int CurrentValue { get; private set; }
+        public int CurrentValue;
 
         public Die(Random random)
         {
